@@ -1,0 +1,377 @@
+/* Universal Selectors */
+:root {
+    --gron: #a7a57d;
+    --groner: #8f8d6a ;
+    --gronest: #757458;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Element Selectors */
+body {
+    
+    background-color: #211C30;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    
+}
+
+nav {
+    display: flex;
+   justify-content: space-evenly;
+   position: absolute;
+    right: 0%;
+    height: 50px;
+    width: 350px;
+    background-color: var(--gron);
+}
+
+main {
+    display: block;
+    
+}
+form {
+    padding: 10px;
+    border: 5px rgb(109, 90, 90);
+    width: 100%;
+    height: 260px;
+    background-color: #d1cfb0;
+    position: relative;
+    top: 25%;
+    
+    
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 8vh;
+    height: 15vh;
+    width: 100%;
+    background-color: var(--gron);
+    
+}
+h1, h2 {
+    text-shadow: black 3px 3px;
+    color: rgb(243, 243, 243);
+}
+
+a {
+    color: black;
+    margin: 12px;
+    font-size: 1.875rem;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+}
+
+a:hover {
+    color: white;
+    text-shadow: black 1px;
+}
+
+/* Header&Navigation Customization */
+
+#header {
+    display: block;
+    margin: 0px;
+    width: 100%;
+    height: 250px;
+    background-color: var(--gron); 
+}
+
+#slug {
+        display:flex;
+        width: 50%;
+        margin: auto;
+        height: 200px;
+        image-rendering: pixelated;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+}
+.navbut:hover {
+   transition: all 0.5s ease-in-out;
+   margin: -5px;
+   
+}
+
+.navbut:nth-child(2) {
+    background-color: var(--groner);
+}
+.navbut:nth-child(3) {
+    background-color: var(--gronest);
+    
+} 
+
+/* Styling Main Content */
+.p {
+    margin: 50px;
+}
+/* About Customization */
+.about {
+    display :flex;
+    justify-content: space-between;
+   
+    height: 95vh;
+    width: 100%;
+}
+
+.about:nth-child(2) {
+    background-color: var(--groner);
+    height: 100vh;
+    width: 99vw;
+    
+}
+.about:nth-child(3) {
+    background-color:#211C30;
+    height: 100vh;
+}
+.aboutP {
+    position: relative;
+    top: 5%;
+    border: 5px solid var(--gronest);
+}
+.aboutS {
+    height: 95vh;
+    width: 60vw;
+    background-color: var(--gron);
+    text-align: center;
+    line-height: 4vh;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.aboutZ {
+    height: 80vh;
+    width: 30vw;
+    background-color: var(--gron);
+    text-align: center;
+    line-height: 4vh;
+    font-size: 1.5625rem;
+    margin-top: 15vh;
+    padding-top: 50px;
+}
+/* Customizing Abouts' new child 'Contact' */
+.aboutZ:nth-child(1) {
+    background-color: var(--gronest);
+    height: 85vh;
+    line-height: normal;
+}
+
+.aboutS:nth-child(2) {
+    background-color: var(--gronest);
+    height: 100vh;
+    display: flex ;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* Customizing Contact Left Side */
+.imageS {
+    height: 250px;
+    position: relative;
+    top: 10%;
+}
+
+.nail {
+    
+    margin: 10px;
+    height: 50px;
+    width: 490px;
+}
+
+/* Customizing Contact Right Side */
+.tactButtons {
+    height: 250px;
+    width: 250px;
+    background-color: #cccccc;
+}
+.tactButtons:nth-child(5) {
+    background-image: url("../Images/breakdance.gif");
+    background-repeat:repeat; 
+    background-position: center;
+} 
+
+.tactButtons:nth-child(4) {
+    background-image: url("../Images/linked.jpg");
+    background-repeat:no-repeat; 
+    background-position: center;
+}
+.tactButtons:nth-child(3) {
+    background-image: url("../Images/github.jpg");
+    background-repeat:no-repeat; 
+    background-position: center;
+}
+
+.tactBS {
+    font-size: 3.4375rem;
+    position: relative;
+    top: 45%;
+}
+
+.tactBS:hover {
+    color: rgb(255, 93, 120);
+    transition: all 0.5s ease 0s;
+}
+/* Work Customization */
+.work {
+    display :flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+.workS {
+    padding: 10vh;
+    height: 100%;
+    width: 100%;
+    background-color: var(--groner);
+    text-align: center;
+    font-size: 1.5625rem;
+}
+
+.workZ{
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-end;
+     border: 2px solid white;
+     max-width: 100%;
+     min-height: 600px;
+     transition: all 0.5s ease-in-out;
+}
+
+.workZ:hover {
+   
+    
+   box-shadow: inset 0px 0px 8px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+ } 
+    
+.workP {
+    border: 5px solid var(--gronest);
+    border-radius: 7%;
+    height: 500px;
+    width: 500px;
+    transition: all 0.3s ease-in-out;
+}
+.workP:hover {
+margin: -15px;
+box-shadow: inset 0px 0px 8px rgb(255, 241, 119), 0 0 15px rgb(255, 241, 119);
+}
+/* For Desktop View */
+@media screen and (max-width: 1024px) {
+    p {
+      font-size: 2rem;
+    }
+    section {
+        width: 100vh;
+        height: 100vh;
+    }
+    nav {
+        right: 7%;
+    }
+    .aboutZ {
+        height: 80vh;
+        width: 30vw;
+    }
+    .workP {
+        height: 150px;
+        width: 200px;
+        flex-direction: row;
+    }
+    img {
+        height: 50%;
+        width: 50%;
+    }
+    .aboutS , .workS, .workZ {
+        margin: 0px;
+        
+       justify-content: center;
+    }
+
+  
+    }
+  
+   
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    p  {
+        font-size: 1.5rem;
+    }
+    section {
+        width: 100vh;
+        height: 100vh;
+    }
+     .aboutZ{
+        height: 80vh;
+        width: 30vw;
+     }
+    nav {
+        right: 7%;
+    }
+    .workP {
+        height: 150px;
+        width: 200px;
+        flex-direction: row;
+    }
+    img {
+        height: 50%;
+        width: 50%;
+    }
+    .aboutS , .workS, .workZ {
+        margin: 0px;
+        
+       justify-content: center;
+    }
+
+  }
+   
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+    p , img {
+        font-size: 2rem;
+        line-height: 3vh;
+  }
+
+section {
+    width: 100vh;
+    height: 100vh;
+}
+nav {
+    right: 7%;
+}
+.workP {
+    height: 500px;
+    width: 300px;
+    flex-direction: row;
+}
+.aboutZ {
+    height: 80vh;
+    width: 30vw;
+}
+.aboutS {
+    height: 95vh;
+    width: 60vw;
+}
+.aboutZ:nth-child(1) , .aboutZ:nth-child(6) {
+height: 65vh;
+width: 100vw;
+}
+img {
+    height: 50%;
+    width: 50%;
+}
+  .workS, .workZ {
+    margin: 0px;
+    padding: 0%;
+   
+   
+} }
